@@ -11,6 +11,8 @@ body {
     opacity: 0;
     transition: opacity 0.7s ease;
     padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;  
 }
 
 .pantalla.visible {
@@ -22,10 +24,12 @@ body {
     font-size: 28px;
     color: #FF7DAE;
     margin-bottom: 20px;
+    line-height: 1.4;
 }
 
 .lottie {
-    width: 280px;
+    width: 100%;
+    max-width: 320px;
     margin: 0 auto 30px auto;
 }
 
@@ -44,4 +48,19 @@ body {
 
 .btn:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .titulo {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .lottie {
+        max-width: 260px;
+    }
 }
