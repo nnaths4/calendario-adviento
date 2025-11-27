@@ -1,0 +1,47 @@
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #FFF7FA;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.pantalla {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    padding: 40px 20px;
+}
+
+.pantalla.visible {
+    display: block;
+    opacity: 1;
+}
+
+.titulo {
+    font-size: 28px;
+    color: #FF7DAE;
+    margin-bottom: 20px;
+}
+
+.lottie {
+    width: 280px;
+    margin: 0 auto 30px auto;
+}
+
+.btn {
+    background: #FFC8DD;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #5A3A4B;
+    transition: transform 0.2s ease;
+    margin-top: 25px;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
